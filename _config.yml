@@ -5,11 +5,11 @@ menu:
   Tags: /tags
 
 # gitment
-gitment: false
-gitment_owner:
-gitment_repo:
-gitment_client_id:
-gitment_client_secret:
+gitment: true
+gitment_owner: javierdearcos
+gitment_repo: javierdearcos.github.io
+gitment_client_id: f6523fdf6e6a86882c6a
+gitment_client_secret: 49ae80c1a41f44d7c07ff308997712fe76b2a513
 
 # gitalk
 gitalk: false
