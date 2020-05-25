@@ -4,6 +4,18 @@ menu:
   Categories: /categories
   Tags: /tags
 
+social:
+  - slug: twitter
+    url: https://twitter.com/javierdearcosTL
+  - slug: linkedin
+    url: https://www.linkedin.com/in/javierdearcos
+  - slug: github
+    url: https://github.com/javierdearcos
+  - slug: envelope
+    url: mailto:fj.dearcos@gmail.com
+  - slug: rss
+    url: /atom.xml
+
 # gitment
 gitment: true
 gitment_owner: javierdearcos
