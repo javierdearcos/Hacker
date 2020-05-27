@@ -15,12 +15,13 @@
   <% } %>
 
   <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="<%- config.root %><%- item.path %>" rel="bookmark">
-        <time class="entry-date published" datetime="<%= item.date.toDate().toISOString() %>">
-          <%= item.date.format(config.date_format) %>
-        </time>
-      </a>
+    <span class="posted-on fa fa-calendar-o">
+      <time class="entry-date published" datetime="<%= item.date.toDate().toISOString() %>">
+        <%= item.date.format(config.date_format) %>
+      </time>
+    </span>
+    <span class="fa fa-clock-o">
+      <%= symbolsTime(item.content) %>
     </span>
   </div>
 
