@@ -1,6 +1,6 @@
+@import "commons"
+
 $siteAColor = #ffffff
-$siteABgColor = #F03838
-$siteDescColor = #9e9e9e
 $socialHoverColor = #3a3a3a
 
 header
@@ -21,7 +21,7 @@ header
         display inline-block
         color $siteAColor
         font-weight bolder
-        background-color $siteABgColor
+        background-color $mainColor
         line-height 3rem
         height 3rem
         padding 0 1rem
@@ -32,7 +32,7 @@ header
           padding: 0 1.5rem
 
     .site-description
-      color $siteDescColor
+      color $secondaryColor
       font-size 1.3rem
       margin 1rem 0 0
 
@@ -43,7 +43,7 @@ header
         display: inline-block
         position: relative
         transition: all .3s ease-in-out 0s
-        color: $siteDescColor
+        color: $secondaryColor
         margin-right: 4px
         margin-left: 4px
 
@@ -68,7 +68,7 @@ header
 
         a
           display block
-          color $siteABgColor
+          color $mainColor
           font-size 1.6rem
           line-height 2rem
           padding 0 1rem

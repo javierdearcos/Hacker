@@ -1,5 +1,4 @@
-$hackerRed = #f03838
-$hackerGray = #9e9e9e
+@import "commons"
 
 article
   .tags-cloud
@@ -33,16 +32,16 @@ article
   .archive-tags, .tags-cloud
     margin 8rem 0
     font-size 1.3rem
-    color #9e9e9e
+    color $primaryColour
 
     a
-      color $hackerGray
+      color $secondaryColor
       &:hover
-        color $hackerRed
+        color $mainColor
 
     i
       vertical-align middle
-      color #9e9e9e
+      color $secondaryColor
       margin-right 0.5rem
 
     .post-tags

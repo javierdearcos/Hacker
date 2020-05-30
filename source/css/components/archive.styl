@@ -1,14 +1,13 @@
+@import "commons"
+
 $archiveTitleCommonColor = #212121
 $archiveTitleHoverCommonColor = #ffffff
 $archiveTitleLinkCommonColor = black
-$archiveTitleTimeCommonColor = #9e9e9e
-$archiveTitleTimeHoverCommonColor = #F03838
 
 $archiveTitleDarkColor = #f6f2f5
 $archiveTitleHoverDarkColor = #000000
 $archiveTitleLinkDarkColor = white
 $archiveTitleTimeDarkColor = #8e8e93
-$archiveTitleTimeHoverDarkColor = #F03838
 
 article.archive
   padding 0
@@ -45,12 +44,12 @@ article.archive
 
     a
       font-size 1.6rem
-      color $archiveTitleTimeCommonColor
+      color $secondaryColor
 
       &:before
         content '#'
       &:hover
-        color $archiveTitleTimeHoverCommonColor
+        color $mainColor
 
 @media (prefers-color-scheme dark)
   .archive-post
@@ -68,5 +67,5 @@ article.archive
         color $archiveTitleTimeDarkColor
 
         &:hover
-          color $archiveTitleTimeHoverDarkColor
+          color $mainColor
 
