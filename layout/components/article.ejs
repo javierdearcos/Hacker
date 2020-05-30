@@ -57,44 +57,39 @@
   <div class="article-footer">
     <div class="article-meta pull-left">
 
-    <% if (item.categories && item.categories.length){ %>
+      <% if (item.categories && item.categories.length){ %>
+        <%
+          var cats = [];
+          item.categories.forEach(function(cat){
+              cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+          });
+        %>
+
+      <span class="post-categories">
+        <i class="icon-categories"></i>
+          <%- cats.join(', ') %>
+      </span>
+      <% } %>
+
+      <% if (item.tags && item.tags.length){ %>
       <%
-        var cats = [];
-        item.categories.forEach(function(cat){
-            cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
-        });
+          var tags = [];
+          item.tags.forEach(function(tag){
+              tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+          });
       %>
 
-    <span class="post-categories">
-      <i class="icon-categories"></i>
-        <%- cats.join(', ') %>
-    </span>
-    <% } %>
-
-    <% if (item.tags && item.tags.length){ %>
-    <%
-        var tags = [];
-        item.tags.forEach(function(tag){
-            tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-        });
-    %>
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <%- tags.join('') %>
-    </span>
-    <% } %>
-
-    </div>
-
-    <% if (index && (theme.disqus || theme.gitment || theme.valine)) { %>
-    <div class="article-meta pull-right">
-      <span>
-        <i class="icon-comments"></i>
-        <span>
-          <a href="<%- config.root %><%- item.path %>#comment"><%- __('comment') %></a>
-        </span>
+      <span class="post-tags">
+        <i class="icon-tags"></i>
+          <%- tags.join('') %>
       </span>
+      <% } %>
+    </div>
+    <% if (!index) { %>
+    <div class="article-share pull-right">
+        <i class="fa fa-share-alt"></i>
+        <div class="addthis_inline_share_toolbox"></div>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ed29f903803a028"></script>
     </div>
     <% } %>
   </div>
