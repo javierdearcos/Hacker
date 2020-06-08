@@ -1,18 +1,18 @@
-categories: Categories
-tags: Tags
-prev: Prev
-next: Next
-comment: Comments
-archive_a: Archives
-archive_b: "Archives: %s"
-page: Page %d
-recent_posts: Recent Posts
-read_more: ... Read more
+categories: "Categorías"
+tags: "Etiquetas"
+prev: "Anterior"
+next: "Siguiente"
+comment: "Commentarios"
+archive_a: "Archivo"
+archive_b: "Archivo: %s"
+page: "Página %d"
+recent_posts: "Entradas Recientes"
+read_more: "... Continuar leyendo"
 
-Home: Home
-Archives: Archives
-Categories: Categories
-Tags: Tags
-About: About
-Links: Links
-RSS: RSS
+Home: "Inicio"
+Archives: "Archivo"
+Categories: "Categorías"
+Tags: "Etiquetas"
+About: "Sobre mí"
+Links: "Enlaces"
+RSS: "RSS"
