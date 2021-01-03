@@ -8,7 +8,7 @@
       <% if (theme.social) { %>
         <% theme.social.forEach(function(value, key){ %>
           <a href="<%- value.url %>" class="social <%= value.slug %>" target="_blank" rel="external">
-            <span class="fa fa-<%= value.slug %>-square"></span>
+            <span class="<%= value.icon %>"></span>
           </a>
         <% }); %>
       <% } %>
