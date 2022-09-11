@@ -88,7 +88,7 @@
   <link rel="stylesheet" href="<%= config.root %>Font-Awesome/css/brands.min.css" media="screen" type="text/css">
   <link rel="stylesheet" href="<%= config.root %>Font-Awesome/css/solid.min.css" media="screen" type="text/css">
 
-  <% if (config.nibspaceDomain) { %>
-    <script async defer data-domain="<%= config.nibspaceDomain %>" src="https://nibspace.com/ns.js"></script>
+  <% if (theme.nibspace) { %>
+  <script async defer data-domain="<%= theme.nibspace_domain %>" src="https://nibspace.com/ns.js"></script>
   <% } %>
 </head>
