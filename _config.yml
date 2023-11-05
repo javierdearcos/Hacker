@@ -18,6 +18,9 @@ social:
   - icon: "fas fa-rss-square fa-2x"
     url: /atom.xml
 
+# Beam Analytics
+beam_token: d3504d31-ce47-47c6-ac4f-95fa2de102d2
+
 # gitalk
 gitalk: true
 gitalk_owner: javierdearcos
